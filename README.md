@@ -149,6 +149,26 @@ result = splitter.split_text(text)
 
 ---
 
+# 📦 Dependencies
+
+You can install these all together via `pip install -r requirements.txt` (sample shown below).
+
+---
+
+## 🧰 Required Libraries
+
+| Package                  | Import                                                             | Purpose                                                                             |
+| ------------------------ | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| `langchain`              | `from langchain.text_splitter import ...`                          | Core LangChain tools like `CharacterTextSplitter`, `RecursiveCharacterTextSplitter` |
+| `langchain_community`    | `from langchain_community.document_loaders import PyPDFLoader`     | Loaders like `PyPDFLoader` for ingesting PDFs                                       |
+| `langchain_experimental` | `from langchain_experimental.text_splitter import SemanticChunker` | Semantic-aware chunking (based on embeddings)                                       |
+| `langchain_huggingface`  | `from langchain_huggingface import HuggingFaceEndpoint`            | Connect to Hugging Face inference endpoints                                         |
+| `sentence-transformers`  | Used internally by `HuggingFaceEmbeddings`                         | Embedding model like `all-MiniLM-L6-v2`                                             |
+| `python-dotenv`          | `from dotenv import load_dotenv`                                   | Load API keys and model config from `.env` file                                     |
+| `os`                     | `import os`                                                        | Environment variable management                                                     |
+
+---
+
 ## 🔚 Summary
 
 Text splitters allow you to break documents into LLM-manageable units while preserving **coherence** and **meaning**. This step is **crucial for RAG pipelines**, summarization, and chunk-based retrieval.
@@ -158,7 +178,5 @@ In this repo:
 * You've explored all major splitter types
 * Used both syntactic and semantic approaches
 * Applied them on PDFs, markdown docs, and code
-
-
 --
 

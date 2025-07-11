@@ -2,7 +2,7 @@
 
 # 📚 LangChain Text Splitters 
 
-In large language model (LLM) workflows, **text splitting** is critical when dealing with long documents. LangChain provides multiple **text splitter strategies** depending on the type and structure of your input — whether it's raw text, structured markdown, or code.
+In large language model (LLM) workflows, **text splitting** is critical when dealing with long documents. LangChain provides multiple **text splitter strategies** depending on the type and structure of your input - whether it's raw text, structured markdown, or code.
 
 This folder contains examples of the following splitter types:
 
@@ -100,7 +100,7 @@ result = splitter.split_text(markdown_text)
 
 #### ✨ Use Case:
 
-Great for LLMs that need to analyze or explain Python code — avoids breaking mid-function or mid-class.
+Great for LLMs that need to analyze or explain Python code - avoids breaking mid-function or mid-class.
 
 #### ✅ Output:
 
